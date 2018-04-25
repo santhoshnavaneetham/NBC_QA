@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="NBC_PoC" verbose="3" parallel="true" thread-count="2">
+
+	<parameter name="documentLoad" value="true" />
+	<parameter name="imageLoad" value="false" />
+	<parameter name="framesLoad" value="false" />
+	<parameter name="deviceHost" value="localhost" />
+	<parameter name="devicePort" value="4444" />
+	<parameter name="browserName" value="chrome_windows" />
+	<parameter name="har" value="false" />
+	<parameter name="webSite" value="http://www.nbcnewyork.com_NBC-NewYork" />
+
+	<test name="NBC_PoC_JAVA">
+		<classes>
+			<class
+				name="com.nbc.testscripts.demo.NBC_SpellChecker_BrokenLine_Demo" />
+		</classes>
+	</test>
+	
+</suite>
